@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link
+      rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Fredoka+One&family=Indie+Flower&family=Kalam:wght@700&family=Rubik+Vinyl&display=swap"
+      rel="stylesheet">
+  </head>
+  <body>
+    <section class="container text-center">
+      <div class="text-center mt-4">
+        <h1>Employees Details</h1>
+      </div>
+      <div class="emp text-center" *ngFor="let employees of employee">
+        <div class="emp1" routerLink="/employee/{{employees.id}}">
+          <div class="row">
+            <h3>Person Details</h3>
+            <div> <img [src]="employees.imageUrl"/>
+              <hr></div>
+            <div class="col-sm-6 mt-3">
+              <p>Employees Name: </p>
+              <p>Employees Age : </p>
+              <p>Gender : </p>
+              <p>Designation : </p>
+              <p>Emp Email : </p>
+            </div>
+            <div class="col-sm-6 mt-3">
+              <p><a href="#">{{employees.name}} </a> </p>
+              <p><a href="#">{{employees.age}} </a> </p>
+              <p><a href="#">{{employees.gender}} </a> </p>
+              <p><a href="#">{{employees.designation}}</a></p>
+              <p><a href="#">{{employees.email}} </a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div>
+      <div class="container text-center mt-5 border border-dark bg-light">
+        <h1>Our Sevices</h1>
+      </div>
+      <div class="container">
+        <div class="card-group mt-3 m-5">
+          <div class="card m-4 rounded">
+            <img src="/assets/images3.png" class="card-img-top rounded">
+            <div class="card-body">
+              <h5 class="card-title text-center">WEB DEVELOPMENT</h5>
+              <p class="card-text">This is a wider card with supporting text
+                below as a natural lead-in to additional content. This content
+                is a little bit longer.</p>
+            </div>
+          </div>
+          <div class="card m-4">
+            <img src="/assets/images2.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title text-center">MOBILE APP DEVELOPMENT</h5>
+              <p class="card-text">Android, iPhone/iOS, React Native, Flutter,
+                Cross Platform App</p>
+            </div>
+          </div>
+          <div class="card m-4">
+            <img src="/assets/images.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title text-center">UNITY DEVELOPMENT</h5>
+              <p class="card-text">Augmented Reality, Virtual Reality, Game
+                Development, 3D Design & Animation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="container text-center border bordered-pill mt-5">
+        <h1>My Achivement</h1>
+
+      </div>
+      <div class="container text-center mt-5">
+        <h1>Let’s talk about your dream project ?</h1>
+        <p>Schedule a free project consultation with one of our expert developer
+          today!</p>
+        <button class="btn btn-outline-warning"><i class="fa-regular
+            fa-envelope">&nbsp;</i>Enter your e-mail address</button>&nbsp;
+        <button class="btn btn-warning">Contact Us</button>
+
+      </div>
+    </div>
+  </body>
+</html>

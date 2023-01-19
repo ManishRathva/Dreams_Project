@@ -1,0 +1,15 @@
+h1{
+    font-family: 'Kalam', cursive;
+    font-weight: 900;
+}
+h1:hover{
+    color:rgb(252, 167, 9);
+}
+.container-fluid{
+    margin-left:100px;
+}
+.dropdown-menu a:hover {background-color:green;}
+
+.dropdown:hover .dropdown-menu {display: block;}
+
+.dropdown:hover .dropdown-menun {background-color: #3e8e41;}
